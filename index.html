@@ -6,6 +6,9 @@
       :root {
         --primary--color: gray;
       }
+      .container {
+        padding: 15px;
+      }
       .centered-container {
         text-align: center;
       }
@@ -49,9 +52,16 @@
         padding-right: 25px;
         padding-left: 25px;
       }
+      .footer {
+        background-color: var(--primary--color);
+        padding: 15px;
+      }
+      .footer .link {
+        color: white;
+      }
     </style>
   </head>
-  <body>
+  <body class="container">
     <!-- Blog Title -->
     <div class="centered-container">
       <h1 class="blog-title">BLOG TITLE</h1>
@@ -90,6 +100,12 @@
       </ul>
     </div>
 
-    
+    <!-- Footer -->
+     <div>
+        <ul class="centered-container footer">
+            <li class="nav-pills list-item-inline"><a class="link" href="/">Contact</a></li>
+            <li class="nav-pills list-item-inline"><a class="link" href="/">Privacy Policy</a></li>
+        </ul>
+     </div>
   </body>
 </html>
