@@ -21,7 +21,6 @@
       }
       .navbar .link {
         color: white;
-        
       }
       .nav-pills {
         list-style: none;
@@ -43,7 +42,13 @@
         padding: 15px;
         font-weight: lighter;
       }
-
+      .post {
+        border: 1px solid var(--primary--color);
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+        padding-right: 25px;
+        padding-left: 25px;
+      }
     </style>
   </head>
   <body>
@@ -56,21 +61,35 @@
     <nav class="navbar">
       <ul class="nav-pills">
         <li class="list-item-inline"><a href="/" class="link">Home</a></li>
-        <li class="list-item-inline"><a href="/" class="link">Categories</a></li>
+        <li class="list-item-inline">
+          <a href="/" class="link">Categories</a>
+        </li>
         <li class="list-item-inline"><a href="/" class="link">About</a></li>
       </ul>
     </nav>
 
     <!-- Blog Post Title -->
-     <div class="centered-container">
-        <h1 class="blog-post-title">Blog Post Title</h1>
-     </div>
+    <div class="centered-container">
+      <h1 class="blog-post-title">Blog Post Title</h1>
+    </div>
 
-     <!-- Blog Post Content Preview -->
-      <div>
-        <h2 class="blog-post-content-preview">Blog Post Content Preview</h2>
-      </div>
+    <!-- Blog Post Content Preview -->
+    <div>
+      <h2 class="blog-post-content-preview">Blog Post Content Preview</h2>
+    </div>
 
-      
+    <!-- Post -->
+    <div>
+      <ul class="post">
+        <li class="nav-pills">Post 1</li>
+        <hr />
+        <li class="nav-pills">Post 2</li>
+        <hr />
+        <li class="nav-pills">Post 3</li>
+        <hr />
+      </ul>
+    </div>
+
+    
   </body>
 </html>
